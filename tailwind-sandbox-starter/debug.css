@@ -1,0 +1,70 @@
+:root {
+  --clr-first: goldenrod;
+  --clr-second: hsl(219, 100%, 50%);
+  --clr-third: hsl(12, 100%, 50%);
+  --clr-fourth: goldenrod;
+}
+
+.debug {
+  border: solid var(--clr-first);
+}
+
+.debug > * {
+  border: solid var(--clr-second);
+}
+
+.debug > * > * {
+  border: solid var(--clr-third);
+}
+
+.debug > * > * > * {
+  border: solid var(--clr-fourth);
+}
+
+.debug > * > * > * > * {
+  border: solid var(--clr-first);
+}
+
+.debug > * > * > * > * > * {
+  border: solid var(--clr-second);
+}
+
+.debug > * > * > * > * > * > * {
+  border: solid var(--clr-third);
+}
+
+.debug > * > * > * > * > * > * > * {
+  border: solid var(--clr-fourth);
+}
+
+.debug > * > * > * > * > * > * > * > * {
+  border: solid var(--clr-first);
+}
+
+.debug > * > * > * > * > * > * > * > * > * {
+  border: solid var(--clr-second);
+}
+
+.debug > * > * > * > * > * > * > * > * > * > * {
+  border: solid var(--clr-third);
+}
+
+.debug > * > * > * > * > * > * > * > * > * > * > * {
+  border: solid var(--clr-fourth);
+}
+
+.debug > * > * > * > * > * > * > * > * > * > * > * > * > * {
+  border: solid var(--clr-first);
+}
+
+.debug > * > * > * > * > * > * > * > * > * > * > * > * > * > * {
+  border: solid var(--clr-second);
+}
+
+.debug > * > * > * > * > * > * > * > * > * > * > * > * > * > * > * {
+  border: solid var(--clr-third);
+}
+
+.debug > * > * > * > * > * > * > * > * > * > * > * > * > * > * > * > * {
+  border: solid var(--clr-fourth);
+}

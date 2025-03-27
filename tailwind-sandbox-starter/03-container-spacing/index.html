@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Container & Spacing</title>
+    <link rel="stylesheet" href="../debug.css" />
   </head>
   <body>
     <!-- Container -->
-    <div>
+    <div class="debug container mx-auto">
       <article>
         <h3>Article One</h3>
         <p>
@@ -21,12 +22,42 @@
       </article>
 
       <!-- Margin -->
+      <div class="bg-slate-100 m-2">Hello World</div>
+      <div class="bg-slate-100 ml-2">Hello World</div>
+      <div class="bg-slate-100 mr-2">Hello World</div>
+      <div class="bg-slate-100 mt-2">Hello World</div>
+      <div class="bg-slate-100 mb-2">Hello World</div>
+      <div class="bg-slate-100 mt-[20px]">Hello World</div>
 
       <!-- Padding -->
+      <div class="bg-green-200 p-2">Hello World</div>
+      <div class="bg-green-200 pl-2">Hello World</div>
+      <div class="bg-green-200 pr-2">Hello World</div>
+      <div class="bg-green-200 pt-2">Hello World</div>
+      <div class="bg-green-200 pb-2">Hello World</div>
+      <div class="bg-green-200 pt-[20px]">Hello World</div>
 
       <!-- Space Between X -->
+      <div class="flex mt-2 space-x-4">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+      </div>
 
       <!-- Space Between Y -->
+      <div class="flex flex-col mt-2 space-y-3">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+      </div>
     </div>
   </body>
 </html>

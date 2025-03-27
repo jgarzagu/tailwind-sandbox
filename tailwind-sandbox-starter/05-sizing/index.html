@@ -6,29 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Sizing</title>
+    <link rel="stylesheet" href="../debug.css" />
   </head>
-  <body>
+  <body class="debug">
     <!-- Width -->
+    <div class="bg-black text-white w-10">Hello</div>
+    <div class="bg-black text-white w-48">Hello</div>
+    <div class="bg-black text-white w-96">Hello</div>
 
     <!-- Percentages -->
+    <div class="bg-green-700 text-white w-1/4">Hello</div>
+    <div class="bg-green-700 text-white w-1/3">Hello</div>
+    <div class="bg-green-700 text-white w-1/2">Hello</div>
 
     <!-- Width of the viewport -->
-
-    <!-- 100% of container -->
+    <!-- 100vw -->
+    <div class="bg-blue-500 text-white w-screen">Hello</div>
+    <!-- 100% container -->
+    <div class="bg-blue-500 text-white w-full">Hello</div>
 
     <!-- min/max content -->
 
     <!-- Arbitrary width -->
+    <div class="bg-blue-700 text-white w-[300px]">Hello</div>
 
     <!-- Max Width -->
+    <div class="bg-gray-700 text-white max-w-sm mx-auto">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
+      facere, repellat consequatur consectetur velit, officia id at architecto
+      iste possimus adipisci iusto fuga dolorem modi molestias, explicabo quos
+      doloremque labore?
+    </div>
 
     <!-- Height (Most of the same options as widths) -->
-
+    <div class="flex items-end">
+      <div class="bg-orange-500 w-20 h-24">Hello</div>
+      <div class="bg-orange-500 w-20 h-32">Hello</div>
+      <div class="bg-orange-500 w-20 h-40">Hello</div>
+      <div class="bg-orange-500 w-20 h-48">Hello</div>
+      <div class="bg-orange-500 w-20 h-64">Hello</div>
+      <div class="bg-orange-500 w-20 h-96">Hello</div>
+    </div>
     <!-- Min Height -->
 
     <!-- Max Height -->
 
     <!-- Full screen height -->
+    <div class="bg-blue-500 text-white h-screen">Hello</div>
+    <div class="bg-green-500 text-white h-screen">Hello</div>
   </body>
 </html>
 

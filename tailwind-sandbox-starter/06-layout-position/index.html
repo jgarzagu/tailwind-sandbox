@@ -5,30 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../debug.css" />
     <title>TailwindCSS</title>
   </head>
   <body>
     <!-- Positioning -->
+    <div class="relative h-12 w-1/2 bg-red-200">
+      <p>Parent Element</p>
+      <div class="absolute bottom-0 right-0 bg-red-500">
+        <p>Absolute Child</p>
+      </div>
+    </div>
 
     <!-- Top left corner -->
+    <div class="relative h-32 w-32 bg-green-400">
+      <p>Parent Element</p>
+      <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300">
+        <p>Absolute Child</p>
+      </div>
+    </div>
 
     <!-- Top right corner -->
+    <div class="relative h-32 w-32 bg-green-400">
+      <p>Parent Element</p>
+      <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-300">
+        <p>Absolute Child</p>
+      </div>
+    </div>
 
     <!-- Bottom left corner -->
+    <div class="relative h-32 w-32 bg-green-400">
+      <p>Parent Element</p>
+      <div class="absolute left-0 bottom-0 h-16 w-16 bg-yellow-300">
+        <p>Absolute Child</p>
+      </div>
+    </div>
 
     <!-- Bottom right corner -->
+    <div class="relative h-32 w-32 bg-green-400">
+      <p>Parent Element</p>
+      <div class="absolute right-0 bottom-0 h-16 w-16 bg-yellow-300">
+        <p>Absolute Child</p>
+      </div>
+    </div>
 
     <!-- Span top edge -->
+    <div class="relative h-32 w-32 bg-gray-400">
+      <p>Parent Element</p>
+      <!-- Expand child to parents width  -->
+      <div class="absolute inset-x-0 top-0 h-1/2 bg-yellow-300">
+        <p>Absolute Child</p>
+      </div>
+    </div>
 
     <!-- Span left edge -->
+    <div class="relative h-32 w-32 bg-gray-400">
+      <p>Parent Element</p>
+      <!-- Expand child to parents width  -->
+      <div class="absolute inset-y-0 left-0 w-1/2 bg-yellow-300">
+        <p>Absolute Child</p>
+      </div>
+    </div>
 
     <!-- Span right edge -->
+    <div class="relative h-32 w-32 bg-gray-400">
+      <p>Parent Element</p>
+      <!-- Expand child to parents width  -->
+      <div class="absolute inset-y-0 right-0 w-1/2 bg-yellow-300">
+        <p>Absolute Child</p>
+      </div>
+    </div>
 
     <!-- Span bottom edge -->
+    <div class="relative h-32 w-32 bg-gray-400">
+      <p>Parent Element</p>
+      <!-- Expand child to parents width  -->
+      <div class="absolute inset-x-0 bottom-0 h-1/2 bg-yellow-300">
+        <p>Absolute Child</p>
+      </div>
+    </div>
 
     <!-- Display Classes -->
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maxime
+      tempore <span class="inline font-bold">This is Inline </span>adipisci
+      reprehenderit minima accusantium sapiente omnis saepe dolorum commodi
+      nobis nesciunt ut deserunt deleniti nihil eum nisi quia laudantium cumque
+      sed, cum culpa dolorem. In porro accusantium non,
+      <span class="inline-block font-bold">This is inline block</span>
+      temporibus voluptatem deleniti quisquam dolor, iste, maxime blanditiis quo
+      nisi! Ullam <span class="hidden font-bold">This is hidden</span> sed
+      accusamus delectus est corporis eaque. Cupiditate itaque natus molestiae!
+    </div>
 
-    <!-- Z-Index -->
+    <!-- Z-Index Children on top of each other then moved-->
+    <div class="debug relative h-36">
+      <div class="absolute left-10 w-24 h-24 bg-blue-400">1</div>
+      <div class="absolute left-20 w-24 h-24 bg-blue-500">2</div>
+      <div class="absolute left-40 w-24 h-24 bg-blue-600">3</div>
+      <div class="absolute left-60 w-24 h-24 bg-blue-800">4</div>
+      <div class="absolute left-80 w-24 h-24 bg-blue-900">5</div>
+    </div>
 
     <!-- Floats -->
   </body>
